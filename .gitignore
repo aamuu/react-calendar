@@ -1,0 +1,30 @@
+# Created by .ignore support plugin (hsz.mobi)
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules*
+
+# testing
+/coverage
+
+# production
+/build
+#IDE
+.idea
+
+# misc
+.DS_Store
+.env*
+
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+release*
+server.pem
+mac-cert.p12
+
+# ignore the auto generated env file
+electron/env.js
+yarn.lock
