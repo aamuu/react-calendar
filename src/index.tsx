@@ -51,8 +51,28 @@ const schedules: ISchedule[] = [
         title: "Hinjewadi Meeting",
         id: "2",
         body: "Description",
-        start: new Date(new Date().setHours(start.getHours() + 35)),
-        end: new Date(new Date().setHours(start.getHours() + 2))
+        start: new Date(new Date().setHours(new Date().getHours() + 22)),
+        end: new Date(new Date().setHours(new Date().getHours() + 28))
+    },
+    {
+        calendarId: "5",
+        category: "time",
+        isVisible: true,
+        title: "Andheri Meeting",
+        id: "1",
+        body: "Description",
+        start: new Date(new Date().setHours(new Date().getHours() + 55)),
+        end: new Date(new Date().setHours(new Date().getHours() + 58))
+    },
+    {
+        calendarId: "5",
+        category: "time",
+        isVisible: true,
+        title: "Andheri Meeting",
+        id: "1",
+        body: "Description",
+        start: new Date(new Date().setHours(new Date().getHours() + 20)),
+        end: new Date(new Date().setHours(new Date().getHours() + 22))
     },
     {
         calendarId: "5",
@@ -61,8 +81,8 @@ const schedules: ISchedule[] = [
         title: "Andheri Meeting",
         id: "2",
         body: "Description",
-        start: new Date(new Date().setHours(new Date().getHours() + 55)),
-        end: new Date(new Date().setHours(new Date().getHours() + 58))
+        start: new Date(new Date().setHours(new Date().getHours() + 15)),
+        end: new Date(new Date().setHours(new Date().getHours() + 18))
     }
 ];
 
