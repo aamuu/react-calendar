@@ -38,10 +38,10 @@ const schedules: ISchedule[] = [
         category: "time",
         isVisible: true,
         title: "Airoli Meeting",
-        id: "2",
+        id: "1",
         body: "Description",
-        start: new Date(new Date().setHours(start.getHours() + 1)),
-        end: new Date(new Date().setHours(start.getHours() + 2))
+        start: new Date(new Date().setHours(start.getHours() - 2)),
+        end: new Date(new Date().setHours(start.getHours() + 1))
     },
     {
         calendarId: "4",
@@ -50,7 +50,7 @@ const schedules: ISchedule[] = [
         title: "Banglore Meeting",
         id: "2",
         body: "Description",
-        start: new Date(new Date().setHours(start.getHours() + 1)),
+        start: new Date(new Date().setHours(start.getHours() - 5)),
         end: new Date(new Date().setHours(start.getHours() + 2))
     }
 ];
