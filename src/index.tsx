@@ -55,7 +55,7 @@ const schedules: ISchedule[] = [
         end: new Date(new Date().setHours(new Date().getHours() + 28))
     },
     {
-        calendarId: "5",
+        calendarId: "2",
         category: "time",
         isVisible: true,
         title: "Baner Meeting",
@@ -65,54 +65,54 @@ const schedules: ISchedule[] = [
         end: new Date(new Date().setHours(new Date().getHours() + 58))
     },
     {
-        calendarId: "6",
+        calendarId: "3",
         category: "time",
         isVisible: true,
         title: "EON Meeting",
-        id: "2",
+        id: "4",
         body: "Description",
         start: new Date(new Date().setHours(new Date().getHours() + 20)),
         end: new Date(new Date().setHours(new Date().getHours() + 22))
     },
     {
-        calendarId: "7",
+        calendarId: "1",
         category: "time",
         isVisible: true,
         title: "Aundh Meeting",
-        id: "2",
+        id: "3",
         body: "Description",
         start: new Date(new Date().setHours(new Date().getHours() + 15)),
         end: new Date(new Date().setHours(new Date().getHours() + 18))
     },
     {
-        calendarId: "8",
+        calendarId: "4",
         category: "time",
         isVisible: true,
         title: "Kothrud Meeting",
-        id: "2",
+        id: "3",
         body: "Description",
         start: new Date(new Date().setHours(new Date().getHours() + 40)),
         end: new Date(new Date().setHours(new Date().getHours() + 45))
     },
     {
-        calendarId: "9",
+        calendarId: "3",
         category: "time",
         isVisible: true,
         title: "Hadapsar Meeting",
-        id: "1",
+        id: "2",
         body: "Description",
         start: new Date(new Date().setHours(new Date().getHours() + 65)),
         end: new Date(new Date().setHours(new Date().getHours() + 70))
     },
     {
-        calendarId: "10",
+        calendarId: "3",
         category: "time",
         isVisible: true,
         title: "Business Bay Meeting",
-        id: "1",
+        id: "4",
         body: "Description",
-        start: new Date(new Date().setHours(new Date().getHours() + 75)),
-        end: new Date(new Date().setHours(new Date().getHours() + 80))
+        start: new Date(new Date().setHours(new Date().getHours() + 55)),
+        end: new Date(new Date().setHours(new Date().getHours() + 62))
     }
 ];
 
@@ -125,9 +125,9 @@ const calendars: ICalendarInfo[] = [
         id: "1",
         name: "Mumbai Office",
         color: "#ffffff",
-        bgColor: "#9e5fff",
-        dragBgColor: "#9e5fff",
-        borderColor: "#9e5fff"
+        bgColor: "#a25002",
+        dragBgColor: "#a25002",
+        borderColor: "#a25002"
     },
     {
         id: "2",
@@ -137,6 +137,22 @@ const calendars: ICalendarInfo[] = [
         dragBgColor: "#00a9ff",
         borderColor: "#00a9ff"
     },
+    {
+        id: "3",
+        name: "Airoli Office",
+        color: "#ffffff",
+        bgColor: "#f058f6",
+        dragBgColor: "#f058f6",
+        borderColor: "#f058f6"
+    },
+    {
+        id: "4",
+        name: "Shivaji Nagar Office",
+        color: "#ffffff",
+        bgColor: "#ae2541",
+        dragBgColor: "#ae2541",
+        borderColor: "#ae2541"
+    }
 ];
 
 function App() {
@@ -151,7 +167,7 @@ function App() {
         console.log(scheduleData);
 
         const schedule = {
-            id: String(Math.random()),
+            id: 4,
             title: scheduleData.title,
             isAllDay: scheduleData.isAllDay,
             start: scheduleData.start,
@@ -234,6 +250,7 @@ function App() {
 
             <Calendar
                 ref={refCalendar}
+                taskView={false}
                 defaultView='day' // daily view option
                 height="1000px"
                 useCreationPopup={true}
