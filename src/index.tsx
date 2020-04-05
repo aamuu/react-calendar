@@ -1,4 +1,5 @@
 import React, {useCallback, useRef} from "react";
+// import moment from 'react-moment'
 import {render} from "react-dom";
 
 import Calendar from "@toast-ui/react-calendar";
@@ -41,16 +42,26 @@ const schedules: ISchedule[] = [
         id: "1",
         body: "Description",
         start: new Date(new Date().setHours(start.getHours() - 2)),
-        end: new Date(new Date().setHours(start.getHours() + 1))
+        end
     },
     {
         calendarId: "4",
         category: "time",
         isVisible: true,
-        title: "Banglore Meeting",
+        title: "Hinjewadi Meeting",
         id: "2",
         body: "Description",
-        start: new Date(new Date().setHours(start.getHours() - 5)),
+        start: new Date(new Date().setHours(start.getHours() + 35)),
+        end: new Date(new Date().setHours(start.getHours() + 2))
+    },
+    {
+        calendarId: "5",
+        category: "time",
+        isVisible: true,
+        title: "Andheri Meeting",
+        id: "2",
+        body: "Description",
+        start: new Date(new Date().setHours(start.getHours() + 55)),
         end: new Date(new Date().setHours(start.getHours() + 2))
     }
 ];
