@@ -17,7 +17,7 @@ const schedules: ISchedule[] = [
         calendarId: "1",
         category: "time",
         isVisible: true,
-        title: "Study",
+        title: "Shivaji Nagar Meeting",
         id: "1",
         body: "Test",
         start: new Date(new Date().setHours(start.getHours() + 2)),
@@ -27,7 +27,27 @@ const schedules: ISchedule[] = [
         calendarId: "2",
         category: "time",
         isVisible: true,
-        title: "Meeting",
+        title: "Powai Meeting",
+        id: "2",
+        body: "Description",
+        start: new Date(new Date().setHours(start.getHours() + 1)),
+        end: new Date(new Date().setHours(start.getHours() + 2))
+    },
+    {
+        calendarId: "3",
+        category: "time",
+        isVisible: true,
+        title: "Airoli Meeting",
+        id: "2",
+        body: "Description",
+        start: new Date(new Date().setHours(start.getHours() + 1)),
+        end: new Date(new Date().setHours(start.getHours() + 2))
+    },
+    {
+        calendarId: "4",
+        category: "time",
+        isVisible: true,
+        title: "Banglore Meeting",
         id: "2",
         body: "Description",
         start: new Date(new Date().setHours(start.getHours() + 1)),
@@ -42,7 +62,7 @@ const myTheme = {
 const calendars: ICalendarInfo[] = [
     {
         id: "1",
-        name: "L&T Calendar",
+        name: "Mumbai Office",
         color: "#ffffff",
         bgColor: "#9e5fff",
         dragBgColor: "#9e5fff",
