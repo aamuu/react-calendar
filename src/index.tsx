@@ -42,7 +42,7 @@ const myTheme = {
 const calendars: ICalendarInfo[] = [
     {
         id: "1",
-        name: "My Calendar",
+        name: "L&T Calendar",
         color: "#ffffff",
         bgColor: "#9e5fff",
         dragBgColor: "#9e5fff",
@@ -50,7 +50,7 @@ const calendars: ICalendarInfo[] = [
     },
     {
         id: "2",
-        name: "Company",
+        name: "Pune Office",
         color: "#ffffff",
         bgColor: "#00a9ff",
         dragBgColor: "#00a9ff",
@@ -149,7 +149,7 @@ function App() {
 
     return (
         <div className="App">
-            <h1>L&T Calendar Scheduler</h1>
+            <h1>L&T Scheduler | Amit Bidkar</h1>
 
             <Calendar
                 ref={refCalendar}
