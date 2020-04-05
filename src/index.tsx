@@ -61,8 +61,8 @@ const schedules: ISchedule[] = [
         title: "Andheri Meeting",
         id: "2",
         body: "Description",
-        start: new Date(new Date().setHours(start.getHours() + 55)),
-        end: new Date(new Date().setHours(start.getHours() + 2))
+        start: new Date(new Date().setHours(new Date().getHours() + 55)),
+        end: new Date(new Date().setHours(new Date().getHours() + 58))
     }
 ];
 
