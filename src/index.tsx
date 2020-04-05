@@ -65,17 +65,17 @@ const schedules: ISchedule[] = [
         end: new Date(new Date().setHours(new Date().getHours() + 58))
     },
     {
-        calendarId: "5",
+        calendarId: "6",
         category: "time",
         isVisible: true,
         title: "EON Meeting",
-        id: "1",
+        id: "2",
         body: "Description",
         start: new Date(new Date().setHours(new Date().getHours() + 20)),
         end: new Date(new Date().setHours(new Date().getHours() + 22))
     },
     {
-        calendarId: "5",
+        calendarId: "7",
         category: "time",
         isVisible: true,
         title: "Aundh Meeting",
@@ -83,6 +83,36 @@ const schedules: ISchedule[] = [
         body: "Description",
         start: new Date(new Date().setHours(new Date().getHours() + 15)),
         end: new Date(new Date().setHours(new Date().getHours() + 18))
+    },
+    {
+        calendarId: "8",
+        category: "time",
+        isVisible: true,
+        title: "Kothrud Meeting",
+        id: "2",
+        body: "Description",
+        start: new Date(new Date().setHours(new Date().getHours() + 40)),
+        end: new Date(new Date().setHours(new Date().getHours() + 45))
+    },
+    {
+        calendarId: "9",
+        category: "time",
+        isVisible: true,
+        title: "Hadapsar Meeting",
+        id: "1",
+        body: "Description",
+        start: new Date(new Date().setHours(new Date().getHours() + 65)),
+        end: new Date(new Date().setHours(new Date().getHours() + 70))
+    },
+    {
+        calendarId: "10",
+        category: "time",
+        isVisible: true,
+        title: "Business Bay Meeting",
+        id: "1",
+        body: "Description",
+        start: new Date(new Date().setHours(new Date().getHours() + 75)),
+        end: new Date(new Date().setHours(new Date().getHours() + 80))
     }
 ];
 
