@@ -1,3 +1,3 @@
 # react-calendar
 
-Custom calendarbased on TUI calendar fork of full calendar using React.
+Custom calendar based on TUI calendar fork of full calendar using React.
